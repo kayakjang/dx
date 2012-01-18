@@ -1,0 +1,43 @@
+<div class="container content">
+
+	<div class="row">
+
+
+
+		<div class="grid_12 last">
+			<div id="flash_container">
+
+			<div id="flash_content">
+				<a href="http://get.adobe.com/flashplayer"><img src="/drawing/embed/image/get_flash_player.jpg" /></a>
+			</div>
+		</div>
+
+			<script type="text/javascript">
+
+			var attributes = {
+				id: "flashObject",
+				name: "flashObject"
+			};
+			var flashvars = {
+				basepath:"/drawing/",
+				language:"en",
+				id:"1234567890"
+			};
+			var params = {};
+
+			params.allowFullScreen = "true";
+			params.allowScriptAccess = "always";
+
+			swfobject.embedSWF("/drawing/Preloader.swf", "flash_content", "100%", "100%", "10.0.0", "", flashvars, params, attributes);
+			swffit.fit("flash_content", 1000, 700);
+
+			</script>
+
+		</div> <!-- grid_8 last -->
+
+
+
+	</div> <!-- row -->
+
+
+</div> <!-- container content -->

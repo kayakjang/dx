@@ -1,0 +1,8 @@
+development:
+  bucket_name: durex
+  access_key_id: AKIAJB2WWFULISDL5DOA
+  secret_access_key: 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
+production:
+  bucket_name: durex
+  access_key_id: AKIAJB2WWFULISDL5DOA
+  secret_access_key: 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

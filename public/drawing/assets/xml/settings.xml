@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	
+	<languages>
+		<!-- Available attributes: default  -->
+		<language default="true">en</language>
+	</languages>
+	
+	<data>
+		<!-- Available options: %(language)s, %(basepath)s -->
+		<xml url="%(basepath)s/assets/xml/%(language)s/glossary.xml"/>
+		<xml url="%(basepath)s/assets/xml/%(language)s/customizer.xml"/>
+	</data>
+	
+	<stage>
+		<!-- Available options: showAll, exactFit, noBorder, noScale -->
+		<scale>noScale</scale>
+		<!-- Available options: default, T, L, B, R, TL, TR, BL, BR -->
+		<align>T</align>
+		<!-- Available options: low, medium, high, best -->
+		<quality>best</quality>
+	</stage>
+	
+	<!-- Available attributes: hideBuiltInItems -->
+	<contextMenu hideBuiltInItems="true">
+		<!-- Available attributes: enabled (boolean), separatorBefore (boolean), visible (boolean) -->
+		<!--
+		<item enabled="true" visible="true" separatorBefore="false">
+			<caption>Your Caption</caption>
+			<link>http://yourlink.com</link>
+		</item>
+		-->
+		
+	</contextMenu>
+	
+</settings>

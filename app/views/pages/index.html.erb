@@ -1,0 +1,69 @@
+<div class="container content">
+
+	<div class="row">
+
+		<div class="grid_4 intro">
+			<div class="fade">
+
+				<!-- Had to add extra div for fade as it uses display:none and fadeIn - getting fade in effects with visibility:hidden was problemtatic e.g. using fadeTo is not reliable in IE --> 
+
+				<img src="<%= asset_path 'nb-logo.png' %>" class="logo" alt="The Durex Naked Box" />
+				<p class="button">
+					<a href="#"><%= I18n.t("pages.index.upload_your_design") %> <img src="<%= asset_path 'arrow-white-button.png' %>" alt="Arrow" width="29" height="20" /></a>
+				</p>
+				<p><%= I18n.t("pages.index.upload_your_design_caption") %></p> 
+				<img src="<%= asset_path 'upload-own.png' %>" alt="Upload your own design" width="288" height="154" />
+
+				<div class="flash">
+					<p><%= I18n.t("pages.index.design_your_own") %></p>
+				</div> <!-- flash -->
+
+			</div> <!-- fade -->
+		</div> <!-- grid_4 -->
+
+
+		<div class="grid_4 before-you-start">
+
+			<div> <!-- cushion -->
+				<div> <!-- cushion -->
+
+					<h1><%= I18n.t("pages.index.before_you_start") %></h1>
+					<h2><%= I18n.t("pages.index.take_a_look_at_the_durex_naked_box_guidelines") %></h2>
+					<h3><%= I18n.t("pages.index.no_naughtiness_please") %></h3>
+					<p><%= I18n.t("pages.index.your_box_must_be_free_of_anything_which_might_offend") %></p>
+
+					<h3><%= I18n.t("pages.index.mind_your_language") %></h3>
+					<p><%= I18n.t("pages.index.keep_your_box_global_friendly_by_avoiding_the_use_of_letters_or_words") %></p>
+
+					<h3><%= I18n.t("pages.index.be_original") %></h3>
+					<p><%= I18n.t("pages.index.be_sure_that_any_visuals_you_supply_are_your_own") %></p>
+					<p><%= I18n.t("pages.index.designs_or_uploaded_images_must_not_include_visuals_of_people") %></p>
+
+				</div>
+			</div>
+
+		</div> <!-- grid_4 -->
+
+
+		<div class="grid_4 last tools">
+			<div class="fade">
+
+				<img src="<%= asset_path 'tools1.png' %>" alt="<%= I18n.t("pages.index.use_our_naked_tools") %>" width="255" height="124" />
+
+				<p class="button">
+					<a href="#"><%= I18n.t("pages.index.use_our_naked_tools") %> <img src="<%= asset_path 'arrow-white-button.png' %>" alt="Arrow" width="29" height="20" /></a>
+				</p>
+
+				<p><%= I18n.t("pages.index.you_might_not_find_them_in_your_typical_stationary_store_but_our_naked_tools_have_the_skills_to_get_your_naked_box_looking_pretty_special_weve_got_everything_from_ribbed_rollers_to_vibrating_pencils_each_with_their_own_adjustable_settings_for_you_to_do_your_thing") %></p>
+				<img src="<%= asset_path 'tools2.png' %>" alt="<%= I18n.t("pages.index.use_our_naked_tools") %>" width="255" height="133" />
+
+				<div class="flash">
+					<p><%= I18n.t("pages.index.grab_your_tool") %></p>
+				</div> <!-- flash -->
+
+			</div> <!-- fade -->
+		</div> <!-- grid_4 last -->
+
+
+	</div> <!-- row -->
+</div> <!-- container content -->

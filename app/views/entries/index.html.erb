@@ -1,0 +1,35 @@
+<h1>Listing entries</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Box 1 uid</th>
+    <th>Box 2 uid</th>
+    <th>Box 3 uid</th>
+    <th>Box 4 uid</th>
+    <th>Box 5 uid</th>
+    <th>Vote count</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @entries.each do |entry| %>
+  <tr>
+    <td><%= entry.user %></td>
+    <td><%= entry.box_1_uid %></td>
+    <td><%= entry.box_2_uid %></td>
+    <td><%= entry.box_3_uid %></td>
+    <td><%= entry.box_4_uid %></td>
+    <td><%= entry.box_5_uid %></td>
+    <td><%= entry.vote_count %></td>
+    <td><%= link_to 'Show', entry %></td>
+    <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
+    <td><%= link_to 'Destroy', entry, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Entry', new_entry_path %>

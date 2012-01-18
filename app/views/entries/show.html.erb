@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @entry.user %>
+</p>
+
+<p>
+  <b>Box 1 uid:</b>
+  <%= @entry.box_1_uid %>
+</p>
+
+<p>
+  <b>Box 2 uid:</b>
+  <%= @entry.box_2_uid %>
+</p>
+
+<p>
+  <b>Box 3 uid:</b>
+  <%= @entry.box_3_uid %>
+</p>
+
+<p>
+  <b>Box 4 uid:</b>
+  <%= @entry.box_4_uid %>
+</p>
+
+<p>
+  <b>Box 5 uid:</b>
+  <%= @entry.box_5_uid %>
+</p>
+
+<p>
+  <b>Vote count:</b>
+  <%= @entry.vote_count %>
+</p>
+
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>

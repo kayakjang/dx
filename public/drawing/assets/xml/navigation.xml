@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigation>
+	<section id="home" default="true">
+		<view>com.durex.customizer.section.Home</view>
+		<dependencies />
+	</section>
+</navigation>

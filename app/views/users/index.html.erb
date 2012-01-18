@@ -1,0 +1,49 @@
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>Facebook</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Email</th>
+    <th>Date of birth</th>
+    <th>Parental permission</th>
+    <th>Gender</th>
+    <th>Country</th>
+    <th>Address 1</th>
+    <th>Address 2</th>
+    <th>Address 3</th>
+    <th>Address 4</th>
+    <th>Rb optin</th>
+    <th>Durex optin</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.facebook_id %></td>
+    <td><%= user.first_name %></td>
+    <td><%= user.last_name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.date_of_birth %></td>
+    <td><%= user.parental_permission %></td>
+    <td><%= user.gender %></td>
+    <td><%= user.country %></td>
+    <td><%= user.address_1 %></td>
+    <td><%= user.address_2 %></td>
+    <td><%= user.address_3 %></td>
+    <td><%= user.address_4 %></td>
+    <td><%= user.rb_optin %></td>
+    <td><%= user.durex_optin %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User', new_user_path %>

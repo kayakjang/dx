@@ -1,0 +1,49 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  layouts:
+    application:
+      home: 'Home'
+      cover_your_box: 'Cover your box'
+      view_gallery: 'View gallery'
+      whats_this_all_about: "What's this all about"
+      naked_world: 'Naked world'  
+      choose: 'Choose'
+      about: 'About'
+      search_for_a_box: 'Search for a box'
+      lost_your_id: 'Lost your ID?'
+      close: 'Close'
+      lost_your_id_number: 'Lost your ID number'
+      dont_panic: "Don't panic"
+      you_can_enter_your_email_address_below_and_well_resend_it_to_you: "You can enter your email address below and we'll resend it to you"
+      enter_email_address: 'email address'
+      resend_my_design_id: 'resend my design ID'
+      location: 'Location'
+      uk: 'UK'
+      france: 'France'
+      germany: 'Germany'
+      italy: 'Italy'
+      durexcom: 'durex.com'
+      terms_and_conditions: 'Terms &amp; Conditions'
+      privacy: 'Privacy'
+      competition_rules: 'Competition Rules'
+      contact_us: 'Contact Us'
+  
+  pages:
+    index:
+      upload_your_design: 'Upload your design'
+      upload_your_design_caption: "For any design pros out there, or if you simply don't fancy our tools (we'll try not to take it too personally!) you can upload your own design and see it in all its glory on our Durex Naked Box."
+      design_your_own: 'Design your own'
+      before_you_start: 'Before you start'
+      take_a_look_at_the_durex_naked_box_guidelines: 'Take a look at the Durex Naked Box guidelines...'
+      no_naughtiness_please: 'No naughtiness please'
+      your_box_must_be_free_of_anything_which_might_offend: 'Your box must be free of anything which might offend.'
+      mind_your_language: 'Mind your language'
+      keep_your_box_global_friendly_by_avoiding_the_use_of_letters_or_words: 'Keep your box global-friendly by avoiding the use of letters or words.'
+      be_original: 'Be original'
+      be_sure_that_any_visuals_you_supply_are_your_own: 'Be sure that any visuals you supply are your own.'
+      designs_or_uploaded_images_must_not_include_visuals_of_people: 'Designs or uploaded images must not include visuals of people.' 
+      use_our_naked_tools: 'Use our naked tools'
+      you_might_not_find_them_in_your_typical_stationary_store_but_our_naked_tools_have_the_skills_to_get_your_naked_box_looking_pretty_special_weve_got_everything_from_ribbed_rollers_to_vibrating_pencils_each_with_their_own_adjustable_settings_for_you_to_do_your_thing: "You might not find them in your typical stationary store, but our Naked Tools have the skills to get your Naked Box looking pretty special. We've got everything from Ribbed Rollers to Vibrating Pencils, each with their own adjustable settings for you to do your thing."
+      grab_your_tool: 'Grab your tool'

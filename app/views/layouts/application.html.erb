@@ -1,0 +1,217 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>The Naked Box | Durex</title>
+
+	<meta name="title" content="">
+	<meta name="description" content="">
+
+	<meta name="author" content="Durex">
+	<meta name="Copyright" content="Copyright Durex 2011. All Rights Reserved.">
+
+	<meta name="DC.title" content="Durex - The naked box">
+	<meta name="DC.subject" content="What it's about.">
+	<meta name="DC.creator" content="Durex">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="<%= asset_path 'favicon.ico' %>">
+	<link rel="apple-touch-icon" href="<%= asset_path 'apple-touch-icon.png' %>">
+	<!-- use 114x114 -->
+
+	<%= stylesheet_link_tag    "application" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+
+	<!--[if IE]>
+	<link rel="stylesheet" href="/css/ie.css">
+	<![endif]-->
+
+</head>
+<body class="<%= params[:locale] %> <%= params[:action] %>">
+	<div id="fb-root"></div>
+	<script>
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId      : '195904387169757', // App ID
+			channelUrl : 'https://durex.herokuapp.com/channel.html', // Channel File
+			status     : true, // check login status
+			cookie     : true, // enable cookies to allow the server to access the session
+			xfbml      : true  // parse XFBML
+		});
+		FB.Canvas.setAutoGrow();
+		FB.Canvas.scrollTo(0,0);
+
+		// Additional initialization code here
+	};
+
+	// Load the SDK Asynchronously
+	(function(d){
+		var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+		js = d.createElement('script'); js.id = id; js.async = true;
+		js.src = "//connect.facebook.net/en_US/all.js";
+		d.getElementsByTagName('head')[0].appendChild(js);
+		}(document));
+		</script>
+
+
+		<div class="container top">
+			<header class="row main">
+
+				<div class="grid_8">
+
+					<nav class="main clearfix">
+
+						<ul>
+							<li id="nav1"><a href="<%= url_for(:action => 'index') %>" class="active"><%= I18n.t("layouts.application.home") %></a></li>
+							<li id="nav2"><a href="<%= url_for(:action => 'create_intro') %>"><%= I18n.t("layouts.application.cover_your_box") %></a></li>
+							<li id="nav3"><a href="<%= url_for(:action => 'gallery') %>"><%= I18n.t("layouts.application.view_gallery") %></a></li>
+							<li id="nav4"><a href="<%= url_for(:action => 'about') %>"><%= I18n.t("layouts.application.whats_this_all_about") %>?</a></li>
+							<li id="nav5"><a href="<%= url_for(:action => 'naked_world') %>"><%= I18n.t("layouts.application.naked_world") %></a></li>
+						</ul>
+
+						<select>
+							<option selected="selected"><%= I18n.t("layouts.application.choose") %>:</option>
+							<option value="<%= url_for(:action => 'index') %>"><%= I18n.t("layouts.application.home") %></option>
+							<option value="<%= url_for(:action => 'create_intro') %>"><%= I18n.t("layouts.application.cover_your_box") %></option>
+							<option value="<%= url_for(:action => 'gallery') %>"><%= I18n.t("layouts.application.view_gallery") %></option>
+							<option value="<%= url_for(:action => 'about') %>"><%= I18n.t("layouts.application.about") %></option>
+							<option value="<%= url_for(:action => 'naked_world') %>"><%= I18n.t("layouts.application.naked_world") %></option>
+						</select>
+
+					</nav>
+
+
+				</div> <!-- grid_8 -->
+
+				<div class="grid_4 last">
+
+					<form class="search">
+
+						<label for="search-for-box"><%= I18n.t("layouts.application.search_for_a_box") %></label>
+						<input name="search-for-box" id="search-for-box" type="search" />
+						<input type="image" class="submit" value="Submit" src="<%= asset_path 'search-arrow.gif' %>" />
+
+					</form> <!-- search -->
+
+
+					<div class="lost-id">
+						<p><a href="#" id="show-lost-form"><%= I18n.t("layouts.application.lost_your_id") %></a></p>
+						<div id="lost-form">
+
+							<form id="resend-id" action="#" method="post">
+
+								<a href="#_" class="close"><%= I18n.t("layouts.application.close") %></a>
+
+								<h3><%= I18n.t("layouts.application.lost_your_id_number") %>?</h3>
+								<h4><%= I18n.t("layouts.application.dont_panic") %></h4>
+
+								<p><%= I18n.t("layouts.application.you_can_enter_your_email_address_below_and_well_resend_it_to_you") %></p>
+
+
+								<label for="lost-id-email"><%= I18n.t("layouts.application.enter_email_address") %></label>
+								<input type="email" id="lostidemail" name="lostidemail" class="required email" />
+
+								<button class="submit" type="submit">
+									<%= I18n.t("layouts.application.resend_my_design_id") %><img src="<%= asset_path 'arrow-white-button.png' %>" alt="Arrow" />
+								</button>
+
+							</form>
+
+						</div> <!-- lost-form -->
+
+						<div class="lost-id-list">
+							<h3><%= I18n.t("layouts.application.location") %>:</h3>
+							<ul>
+								<li><a href="#"><%= I18n.t("layouts.application.uk") %></a></li>
+								<li><a href="#"><%= I18n.t("layouts.application.france") %></a></li>
+								<li><a href="#"><%= I18n.t("layouts.application.germany") %></a></a></li>
+								<li><a href="#"><%= I18n.t("layouts.application.italy") %></a></li>
+							</ul>
+
+						</div> <!-- lost-id-list -->
+
+					</div> <!-- lost-id -->
+				</div> <!-- grid_4 -->
+
+
+
+
+
+			</header> <!-- row -->
+
+
+
+		</div> <!-- container -->
+
+		<div class="tear"></div> <!-- tear -->
+
+
+		<%= yield %>
+
+		<div class="footer-tear"></div> <!-- tear -->
+
+
+
+		<footer class="container main">
+
+			<div class="row">
+
+				<div class="grid_12">
+
+					<nav>
+						<ul>
+							<li><a href="http://durex.com"><%= I18n.t("layouts.application.durexcom") %></a></li>
+							<li><a href="#"><%= I18n.t("layouts.application.terms_and_conditions") %></a></li>
+							<li><a href="#"><%= I18n.t("layouts.application.privacy") %></a></li>
+							<li><a href="#"><%= I18n.t("layouts.application.competition_rules") %></a></li>
+							<li class="last"><a href="#"><%= I18n.t("layouts.application.contact_us") %></a></li>
+						</ul>
+					</nav>
+
+				</div>
+
+			</div> <!-- row -->
+		</footer> <!-- container -->
+
+
+<!-- IE6 png fix + unsupported selectors -->
+
+<!--[if IE 6]>
+<script src="http://cachedcommons.org/cache/dd-belated-png/0.0.8/javascripts/dd-belated-png-min.js"></script>
+<script>
+DD_belatedPNG.fix('.features,li.entry img,.logo,.search input,.tear,.star,.tip,li.vote a, p.link a,.countdown,.footer-tear,.filter .submit-arrow');
+</script>
+
+<script>
+$(document).ready(function() {
+////////////////////////////////
+
+$("nav select, .filter input[type='submit']").css("display", "none");
+$("body > div.tear").css("position", "relative").css("bottom", "5px");
+$("nav.main ul li#nav1").css("position", "relative").css("top", "10px");
+
+////////////////////////////////
+});
+</script>
+<![endif]-->
+
+<!--[if IE 6]>
+<script src="http://cachedcommons.org/cache/dd-belated-png/0.0.8/javascripts/dd-belated-png-min.js"></script>
+<script src="/js/ie6.js"></script>
+<![endif]-->
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section>
+	<customizer>
+		<brushes>
+			<brush x="124" y="5" rotation="34" star_x="10" star_y="20">
+				<label><![CDATA[Frisky<br />Brush]]></label>
+				<brush>com.durex.customizer.brushes.BrushFluid</brush>
+				<cursor>com.durex.customizer.cursor.CursorFrisky</cursor>
+				<description>Cookie pie halvah jelly-o danish macaroon. Tart tootsie roll lemon drops pie pie ice cream icing.</description>
+				<options>
+					<thickness min="1" max="8" paramName="thickness" />
+					<slider min="0" max="10" value="0" paramName="blur" icon="blur">
+						<label>Hard                                                          Soft</label>
+						<description>Makes the brush stroke harder or softer</description>
+					</slider>
+				</options>
+			</brush>
+			<brush x="217" y="-10" rotation="36" star_x="5" star_y="25">
+				<label><![CDATA[Vibro<br />Pencil]]></label>
+				<brush>com.durex.customizer.brushes.BrushRegular</brush>
+				<cursor>com.durex.customizer.cursor.CursorVibro</cursor>
+				<description>Halvah tart I love I love sweet jujubes chocolate bar.</description>
+				<options>
+					<thickness min="1" max="8" paramName="thickness" />
+					<switcher on="true" paramName="vibration">
+						<label>Vibration</label>
+						<on>ON</on>
+						<off>OFF</off>
+						<description>You can switch off the vibration to draw a straight line.</description>
+					</switcher>
+				</options>
+			</brush>
+			<brush x="200" y="115" rotation="215" star_x="35" star_y="30">
+				<label><![CDATA[Ribbed<br />Roller]]></label>
+				<brush>com.durex.customizer.brushes.BrushPaintRoller</brush>
+				<cursor>com.durex.customizer.cursor.CursorPaintRoller</cursor>
+				<description>Gummies sweet roll I love I love topping. Cotton candy donut cake.</description>
+				<options>
+				</options>
+			</brush>
+			<brush x="8" y="200" rotation="35" star_x="5" star_y="25">
+				<label><![CDATA[Kinky<br />Curves]]></label>
+				<brush>com.durex.customizer.brushes.BrushFluid</brush>
+				<cursor>com.durex.customizer.cursor.CursorKinkyCurves</cursor>
+				<description>Dragée croissant sweet roll I love toffee.</description>
+				<options>
+					<thickness min="1" max="16" paramName="thickness" />
+				</options>
+			</brush>
+			<brush x="215" y="285" rotation="0" star_x="27" star_y="-12">
+				<label><![CDATA[Lube<br />Spray]]></label>
+				<brush>com.durex.customizer.brushes.BrushSpray</brush>
+				<cursor>com.durex.customizer.cursor.CursorSpray</cursor>
+				<description>Tiramisu halvah sesame snaps liquorice macaroon.</description>
+				<options>
+					<thickness min="5" max="30" paramName="thickness" />
+				</options>
+			</brush>
+			<brush x="140" y="370" rotation="0" star_x="7" star_y="17">
+				<label><![CDATA[Massage<br />Oil Pastel]]></label>
+				<brush>com.durex.customizer.brushes.BrushMassageOil</brush>
+				<cursor>com.durex.customizer.cursor.CursorMassageOil</cursor>
+				<description>Brownie brownie brownie soufflé wafer gummies.</description>
+				<options>
+				</options>
+			</brush>
+			<brush x="10" y="344" rotation="0" scale=".85" star_x="5" star_y="0">
+				<label><![CDATA[Love<br />Bucket]]></label>
+				<cursor>com.durex.customizer.cursor.CursorLoveBucket</cursor>
+				<description>Lollipop biscuit dessert chocolate cake chupa chups oat cake candy wafer donut.</description>
+				<options>
+					<pattern paramName="pattern">
+						<label>Pattern Picker</label>
+						<item id="assets.bitmap.PatternPlain"><![CDATA[Solid<br />Colour]]></item>
+						<item id="assets.bitmap.PatternFishnet"></item>
+						<item id="assets.bitmap.PatternLips"></item>
+						<item id="assets.bitmap.PatternHearts"></item>
+					</pattern>
+				</options>
+			</brush>
+			<brush x="125" y="240" rotation="0" scale=".85" star_x="-10" star_y="30">
+				<label><![CDATA[Stocking<br />Stamp]]></label>
+				<brush>com.durex.customizer.brushes.BrushStamp</brush>
+				<cursor>com.durex.customizer.cursor.CursorStamp</cursor>
+				<description>Candy soufflé powder gummies cotton candy powder bonbon brownie.</description>
+				<options>
+					<thickness min="20" max="600" value="200" paramName="thickness" />
+					<pattern paramName="pattern">
+						<label>Stamp Picker</label>
+						<item id="assets.bitmap.StampFlower"></item>
+						<item id="assets.bitmap.StampHeart"></item>
+						<item id="assets.bitmap.StampLips"></item>
+						<item id="assets.bitmap.StampStar"></item>
+					</pattern>
+				</options>
+			</brush>
+			<brush x="120" y="120" rotation="19" star_x="7" star_y="17">
+				<label><![CDATA[Sexy<br />Shapes]]></label>
+				<cursor>com.durex.customizer.cursor.CursorFeather</cursor>
+				<description>Carrot cake I love tart biscuit.</description>
+				<options>
+					<feather paramName="type">
+						<label>Selection Type</label>
+						<circle>Circle</circle>
+						<square>Square</square>
+						<freehand>Freehand</freehand>
+					</feather>
+				</options>
+			</brush>
+			<brush x="6" y="80" rotation="35" star_x="5" star_y="20">
+				<label><![CDATA[Rubber]]></label>
+				<brush>com.durex.customizer.brushes.BrushRubber</brush>
+				<cursor>com.durex.customizer.cursor.CursorRubber</cursor>
+				<description>Jujubes icing sweet dragée muffin croissant marzipan croissant I love.</description>
+				<options>
+					<thickness min="5" max="27" value="20" paramName="thickness" />
+				</options>
+			</brush>
+		</brushes>
+	</customizer>
+</section>

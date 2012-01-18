@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user: 
+  box_1_uid: MyString
+  box_2_uid: MyString
+  box_3_uid: MyString
+  box_4_uid: MyString
+  box_5_uid: MyString
+  vote_count: 1
+
+two:
+  user: 
+  box_1_uid: MyString
+  box_2_uid: MyString
+  box_3_uid: MyString
+  box_4_uid: MyString
+  box_5_uid: MyString
+  vote_count: 1

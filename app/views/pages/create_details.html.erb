@@ -1,0 +1,282 @@
+
+<div class="container content">
+
+	<div class="row">
+
+		<div class="grid_6">
+
+			<img src="<%= asset_path 'nb-logo.png' %>" class="logo" alt="The Durex Naked Box" />
+
+
+			<div class="submitted-design">
+
+				<div class="star">
+					<p>Your design</p>
+				</div> <!-- star -->
+
+				<img src="<%= asset_path 'thanks-box.png' %>" alt="Submitted design" />
+
+			</div> <!-- submitted-design -->
+
+
+			<div class="features">
+
+
+				<ul>
+					<li class="feature-1">Grab your tool</li>
+					<li class="feature-2">Cover your box!</li>
+					<li class="feature-3"><span>Win</span> prizes</li>
+				</ul>
+
+				<!-- 
+
+will be very hard to keep this exact style of type and lyout for all languages: http://pbrg.es/Cxs4 
+but will try best and the WIN word is important so can split that out with a span
+--> 
+
+
+</div>
+
+</div> <!-- grid_6 -->
+
+
+<div class="grid_6 last">
+
+	<h1 class="tear-fade">A little bit about you</h1>
+
+	<p>We just need a few details from you to be in for the chance of winning our competition prizes.</p>
+
+	<p>Items marked with a <span class="req">*</span> are required fields.</p>
+
+	<form class="about-you" method="post" action="#">
+
+		<div class="clearfix">
+
+			<label for="firstname">
+				First Name <span class="req">*</span> 
+				<span>This won't be displayed in the gallery</span>
+			</label>
+
+			<input type="text" class="required" name="firstname" id="firstname" /> 	
+
+		</div>
+
+
+		<div class="clearfix">
+
+			<label for="lastname">
+				Surname <span class="req">*</span> 
+				<span>This won't be displayed in the gallery</span>
+			</label>
+
+			<input type="text" class="required"  name="lastname" id="lastname" /> 	
+
+		</div>
+
+
+		<div class="clearfix">
+
+			<label>
+				Email <span class="req">*</span> 
+				<span>So we can let you know when your design is up in the gallery</span>
+			</label>
+
+			<input type="email" class="required email"  name="email" id="email" /> 	
+
+		</div>
+
+
+		<div class="clearfix">
+
+			<label for="emailconfirm">
+				Confirm Email <span class="req">*</span> 
+				<span>To make sure it's correct</span>
+			</label>
+
+			<input type="email" class="required email"  name="emailconfirm" id="emailconfirm" /> 	
+
+		</div>
+
+
+		<div class="clearfix dob">
+
+			<label>
+				Date of birth <span class="req">*</span> 
+				<span>You'll need to prove your age to claim your prize so please be honest with us</span>
+			</label>
+
+			<fieldset>
+				<select class="required"  name="day" id="day">
+					<option selected="selected">Day</option>
+					<option vlaue="01">01</option>
+					<option vlaue="02">02</option>
+					<!-- use a generator of some kind? -->
+
+				</select> 	
+
+
+				<select class="required"  name="month" id="month">
+					<option selected="selected">Month</option>
+					<option vlaue="01">Jan</option>
+					<option vlaue="02">Feb</option>
+					<!-- use a generator of some kind? -->
+				</select> 	
+
+				<select class="required"  name="year" id="year">
+					<option selected="selected">Year</option>
+					<option vlaue="1930">1930</option>
+					<option vlaue="1931">1931</option>
+					<!-- use a generator of some kind? -->
+					<!-- really use a drop down for this? -->
+				</select> 	
+			</fieldset>
+
+		</div> <!-- dob -->
+
+		<div class="clearfix checkbox">
+
+			<label>
+				<input type="checkbox" value="yes" /> I am under [age] but I have parental permission to be entered into the prize draw 
+			</label>
+
+		</div> <!-- clearfix -->
+
+
+		<div class="clearfix gender">
+
+			<label for="emailconfirm">
+				Gender <span class="req">*</span>
+			</label>
+
+			<div>
+				<input type="radio" name="gender" id="male" checked="checked" /> Male	
+			</div>
+
+			<div>
+				<input type="radio" name="gender" id="female" /> Female	
+			</div>
+
+
+		</div> <!-- gender -->
+
+
+
+
+
+		<h2 class="tear-fade">A little bit about where you live</h2>
+
+
+
+		<div class="clearfix">
+
+			<label for="email-confirm">
+				I live in <span class="req">*</span> 
+				<span>The country you live in</span>
+			</label>
+
+			<select id="country" name="country">
+				<option value="Spain">Spain</option>
+				<option value="France">France</option>
+				<option value="UK">UK</option>
+				<!-- confirm country options -->
+			</select> 	
+
+		</div>
+
+
+		<div class="clearfix">
+
+			<label for="address-number">
+				House/Flat number or name  
+			</label>
+
+			<input type="text" name="address-number" id="address-number" /> 	
+
+		</div>
+
+
+
+		<div class="clearfix">
+
+			<label for="address-number">
+				Street Name  
+			</label>
+
+			<input type="text" name="street-name" id="street-name" /> 	
+
+		</div>
+
+		<div class="clearfix">
+
+			<label for="town-city">
+				Town or City  
+			</label>
+
+			<input type="text" name="town-city" id="town-city" /> 	
+
+		</div>
+
+		<div class="clearfix">
+
+			<label for="county-state">
+				County or State  
+			</label>
+
+			<input type="text" name="county-state" id="county-state" /> 	
+
+		</div>
+
+
+
+		<div class="clearfix checkbox">
+
+			<label>
+				<input type="checkbox" name="terms" id="terms" class="required"  value="yes" /> I accept the <a href="#">Terms &amp; Conditions</a> 
+			</label>
+
+		</div> <!-- clearfix -->
+
+
+		<div class="clearfix checkbox">
+
+			<label>
+				<input type="checkbox" name="sign-up" value="yes" /> Yes, I'd like to sign up for latest news, exciting contests and offers from Durex
+			</label>
+
+		</div> <!-- clearfix -->
+
+		<div class="clearfix checkbox">
+
+			<label>
+				<input type="checkbox" name="sign-up-more" value="yes" /> Yes, I'd also like to receive more great offers, competitions and tips from the makers of Durex, Finish, Calgon, Air Wick and Veet.
+
+			</label>
+
+		</div> <!-- clearfix -->
+
+		<img src="<%= asset_path 'arrow-small-down.png' %>" alt="Arrow" class="arrow" />
+
+
+		<button class="submit" type="submit">
+			Submit my design <img src="<%= asset_path 'arrow-white-button.png' %>" alt="Arrow" />
+		</button>
+
+
+
+	</form> <!-- where-you-live -->
+
+
+
+
+
+
+</div> <!-- last -->
+
+
+
+</div> <!-- row -->
+
+
+
+
+</div> <!-- container -->

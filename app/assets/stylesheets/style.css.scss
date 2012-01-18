@@ -1,0 +1,2873 @@
+@font-face {
+    font-family: 'HELVHANDFULL2Medium';
+    src: url('/fonts/helvhandfull2-webfont.eot');
+    src: url('/fonts/helvhandfull2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/helvhandfull2-webfont.woff') format('woff'),
+         url('/fonts/helvhandfull2-webfont.ttf') format('truetype'),
+         url('/fonts/helvhandfull2-webfont.svg#HELVHANDFULL2Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/* Reset
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}									
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img,
+object,
+embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+	white-space: pre; /* CSS2 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+ 
+/* Accessible focus treatment
+	people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {outline: none;}
+
+small {font-size: 85%;}
+
+strong, th {font-weight: bold;}
+
+td, td img {vertical-align: top;} 
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button {width: auto; overflow: visible;}
+ 
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/* let's clear some floats */
+.clearfix:before, .row:before, .clearfix:after, .row:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after, .row:after { clear: both; }  
+.clearfix, .row { zoom: 1; }  
+
+.last {margin-right:0 !important;padding-right:0 !important;padding-bottom:0 !important;margin-bottom:0 !important;background-image:none !important}
+
+    /*
+	========================================================
+	========================================================
+	========================================================
+	*/
+
+
+
+
+/* Styles start
+-------------------------------------------------------------------------------*/
+
+/* ---- General styles */
+
+body {font: 13px Arial, Helvetica, Verdana, sans-serif;}
+
+body, select, input, textarea {color: #333;}
+
+a {color: #e42e65;text-decoration: none}
+a:hover {color: #af1745;}
+
+::-moz-selection{background: #59ba80; color: #fff; text-shadow: none;}
+::selection {background: #59ba80; color: #fff; text-shadow: none;} 
+
+a:link {-webkit-tap-highlight-color: #e42e65;} 
+
+nav li {float:left;margin-right:20px}
+
+p {
+line-height: 150%;
+font-size:14px;
+color:#666;
+}
+
+.content p {margin-bottom:18px}
+
+div.top {background: #FFF}
+
+/* Big blue button links */
+p.button {
+background:#5da7d9 image-url('bg-blue-fade.gif') left bottom repeat-x;
+text-align: center;
+}
+
+p.button a {
+display: block;
+padding:12px 30px 12px 12px;
+font-size: 20px;
+font-weight: bold;
+color:#FFF;
+}
+
+p.button a:hover {
+background-color:#E42E65;
+}
+
+p.button a img {
+position: relative;
+top:5px;
+left:4px;
+}
+
+
+/* ---- About */
+
+.copy-block {
+position: relative;
+}
+
+
+.about .copy-block img{
+position: absolute;
+}
+
+.talk img {
+top:-20px;
+left: 322px;
+}
+
+
+.about .talk h1 {
+margin-top:30px;
+}
+/* push clear of the top tear fade */
+
+
+.covering img {
+top:-20px;
+left:315px;
+}
+
+.about .tear-fade {
+margin-bottom:20px;
+}
+
+/* The titles in the 3rd section down */
+.about .grid_5 h3,
+.about .grid_5 h4 {
+font-size:30px;
+margin-bottom:30px;
+}
+
+
+.about h1.tear-fade {
+width: 420px;
+/* these are fixed due to the images included onthe right overlap the title if flexible */
+}
+
+
+/* dotted arrow next to 'Use our Naked Tools' */
+.about .grid_5 {
+position: relative;
+}
+.about .grid_5 .arrow {
+position: absolute;
+top:-70px;
+}
+
+.about .grid_5 h3 {
+margin-left:130px;
+}
+
+.about p.big {
+font-size:34px;
+font-weight: bold;
+line-height: 100%;
+}
+
+.about .t-shirt {
+position: relative;
+bottom:50px;
+right:0;
+}
+
+.about .finalists-summary .arrow {
+float:left;
+position: relative;
+right:67px;
+top:-20px;
+}
+
+.about .finalists-summary .col {
+width: 28%;
+margin-right:3%;
+float:left;
+text-align: center;
+}
+
+.about .finalists-summary .col p {
+font-weight: bold;
+}
+
+.about .finalists-summary .col .star {
+margin:0 auto;
+}
+
+.about .finalists-summary .col .star p {
+font-weight: bold;
+font-size: 26px;
+color:#FFF;
+line-height: 90%;
+padding-top:26px;
+}
+
+.about .finalists-summary .star p span {
+display: block;
+font-size:50px;
+margin-bottom: 4px;
+}
+
+.about .finalists-summary .green .star {
+background: image-url('star-large-green.png') center top no-repeat;
+width:151px;height:150px;
+-webkit-transform: rotate(-15deg);
+-moz-transform: rotate(-15deg);
+-ms-transform: rotate(-15deg);
+-o-transform: rotate(-15deg);
+}
+
+
+.about .finalists-summary .green {position: relative}
+.about .finalists-summary .green abbr {
+position: absolute;
+left:95%;
+top:40px;
+cursor: default;
+border-bottom:0;
+font-weight: bold;
+font-size:60px;
+
+}
+
+.about .finalists-summary .yellow .star {
+background: image-url('star-large-yellow.png') center top no-repeat;
+width:151px;height:150px;
+-webkit-transform: rotate(10deg);
+-moz-transform: rotate(10deg);
+-ms-transform: rotate(10deg);
+-o-transform: rotate(10deg);
+}
+
+.about .finalists-summary .yellow .star p {
+width:90px;
+margin: 0 auto;
+position: relative;
+top:14px;
+}
+
+
+.about .finalists-summary .pink {
+position: relative;
+bottom:40px;
+/* The height of the arrow image */
+}
+
+.about .finalists-summary .pink .star {
+background: image-url('star-large-pink.png') center top no-repeat;
+width:151px;height:150px;
+-webkit-transform: rotate(2deg);
+-moz-transform: rotate(2deg);
+-ms-transform: rotate(2deg);
+-o-transform: rotate(2deg);
+}
+
+.about .finalists-summary .pink .star p {
+width:60px;
+margin: 0 auto;
+}
+
+.about .finalists-summary .pink .star p span {
+margin-top:15px;
+}
+
+.about .grand-prize .blue .star {
+background: image-url('star-large-blue.png') center top no-repeat;
+width:184px;height:173px;
+-webkit-transform: rotate(-15deg);
+-moz-transform: rotate(-15deg);
+-ms-transform: rotate(-15deg);
+-o-transform: rotate(-15deg);
+position: relative;
+left:-44px;
+}
+
+
+.about .grand-prize .blue .star p {
+width:150px;
+margin: 0 auto;
+position: relative;
+top:46px;
+text-align: center;
+font-size:38px;
+font-weight:bold;
+color:#FFF;
+line-height: 100%;
+}
+
+.about .grand-prize .grid_6 h4 {
+font-size:24px;
+margin-bottom:20px;
+line-height: 95%;
+}
+
+.about .grand-prize .grid_6 {
+position: relative;
+}
+
+.about .grand-prize .grid_6 img.arrow {
+position: absolute;
+right:10%;
+top:-70px;
+}
+
+.about .grand-prize .grid_6 h4,
+.about .grand-prize .grid_6 p {
+padding-right:30%;
+}
+
+.about .grand-prize .grid_6 .button {
+margin:30px 0;
+width: 60%;
+padding-right: 0;
+}
+
+
+/* Headers decoration */
+.tear-fade {
+background: image-url('header-bg.png') no-repeat;
+padding: 20px 10px 35px 20px;
+font-size:24px;
+font-weight: bold;
+color:#FFF;
+position: relative;
+left:-20px;
+}
+
+
+div.tear {height:30px;background:transparent image-url('bg-paper-tear.png') repeat-x left top;position: relative;}
+body > div.tear {z-index: 1000;height:60px;}
+/* want first tear to sit on top of the main content for a fade in effect */
+
+.winners div.tear {
+height:35px;
+background:transparent image-url('bg-paper-tear-2.png') repeat-x left top;
+position: relative;
+right:120px;
+bottom:17px;
+}
+
+
+.gallery-more div.tear {
+height:35px;
+background:transparent image-url('bg-paper-tear-2-bottom.png') repeat-x left bottom;
+position: relative;
+right:102px;
+top:13px;
+}
+
+div.content {
+padding-top:20px;
+/* padding-bottom:40px; */
+background:image-url('bg-paper.jpg');
+}
+
+/* to get best overlap effect on top tear - we now shift all the content and main footer up 30px */
+
+div.content, footer.main {
+position: relative;bottom:30px;
+}
+
+
+/* ---- Main Nav */
+nav.main {position: relative;top:25px;}
+
+nav.main ul li {
+font-weight: bold;
+font-size:16px;
+color:#FFF;
+text-align: center;
+margin-right:10px;
+}
+
+nav.main ul li a {
+display: block;
+padding:10px 15px 15px 10px;
+color:#FFF;
+text-decoration: none;
+background:#60abda image-url('nav-bg-blue.gif') left bottom repeat-x;
+min-height: 40px;
+}
+
+nav.main ul li a:hover,
+nav.main ul li a.active {
+background:#e42e65;
+color:#FFF;
+}
+
+#nav1{
+width:75px;
+-webkit-transform: rotate(-2deg);
+-moz-transform: rotate(-2deg);
+-ms-transform: rotate(-2deg);
+-o-transform: rotate(-2deg);
+
+}
+#nav2{
+width:125px;
+-webkit-transform: rotate(-1deg);
+-moz-transform: rotate(-1deg);
+-ms-transform: rotate(-1deg);
+-o-transform: rotate(-1deg);
+}
+
+#nav3{
+width:100px;
+}
+
+#nav4{width:125px;
+-webkit-transform: rotate(-1.5deg);
+-moz-transform: rotate(-1.5deg);
+-ms-transform: rotate(-1.5deg);
+-o-transform: rotate(-1.5deg);
+
+}
+
+#nav5{width:100px;
+-webkit-transform: rotate(1deg);
+-moz-transform: rotate(1deg);
+-ms-transform: rotate(1deg);
+-o-transform: rotate(1deg);
+}
+
+/* -- Weekly / sub nav */
+
+nav.sub {
+margin-bottom:0px;
+}
+
+nav.sub ul li {
+font-weight: bold;
+font-size:16px;
+color:#FFF;
+text-align: center;
+margin-right:10px;
+}
+
+
+nav.sub ul li a {
+display: block;
+padding:10px 15px 20px 10px;
+color:#FFF;
+text-decoration: none;
+background:#60abda image-url('nav-bg-blue.gif') left bottom repeat-x;
+-webkit-transform: rotate(-2deg);
+-moz-transform: rotate(-2deg);
+-ms-transform: rotate(-2deg);
+-o-transform: rotate(-2deg);
+}
+
+
+nav.sub ul li a:hover,
+nav.sub ul li a.active,
+.ui-tabs .ui-tabs-nav li.ui-state-active a,
+body.charts nav.sub ul li a:hover {
+background:#e42e65;
+color:#FFF;
+}
+
+
+
+/*
+ * jQuery UI Tabs 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.ui-tabs { position: relative; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 0; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+
+
+
+
+
+
+
+/* Winners titles */
+.winners h4,
+.winners p.right a {
+font-size:16px;
+margin-bottom:15px;
+text-decoration: none;
+color:#333;
+font-weight: bold;
+}
+
+
+
+.winners h4 {
+width:75%;
+}
+/* A full length h4 on wide screens is hard to read over two lines - so breaking it up earlier */
+
+
+.winners p.right a:hover {
+color:#E42E65;
+}
+
+
+/* -- Search form */
+.search {
+width:45%;
+padding:10px 10px 20px 10px;
+background: #a6b7cf;
+-webkit-transform: rotate(1.5deg);
+-moz-transform: rotate(1.5deg);
+-ms-transform: rotate(1.5deg);
+-o-transform: rotate(1.5deg);
+float:left;
+margin-right:2%;
+position: relative;
+top:20px;
+}
+
+.search label {
+font-weight:bold;
+font-size:16px;
+display: block;
+color:#FFF;
+}
+
+.search input {
+background: #e8e8e8;
+padding:2px;
+-webkit-appearance:none;
+border:0;}
+
+.search input[type='search']{
+width:75%;
+}
+
+.search input[type='image']{
+background: transparent;
+}
+
+/* -- Lost ID */
+
+.lost-id {
+float: left;
+-webkit-transform: rotate(-1deg);
+-moz-transform: rotate(-1deg);
+-ms-transform: rotate(-1deg);
+-o-transform: rotate(-1deg);
+position: relative;
+top:30px;
+}
+
+.lost-id p {
+position: relative;
+bottom:5px;
+}
+
+.lost-id p a {
+color:#a6b7cf;
+font-size:12px;
+}
+
+.lost-id p a:hover {
+color:#666;
+}
+
+.lost-id-list {
+padding:5px 5px 15px 5px;
+background: #a6b7cf;
+}
+
+.lost-id-list ul {
+display: none;
+background:#a6b7cf;
+padding-bottom:50px;
+}
+
+.lost-id-list h3 {
+color:#FFF;
+padding-right:20px;
+background-image:image-url('drop-arrow.png');
+background-repeat: no-repeat;
+background-position: right 2px;
+cursor: pointer;
+}
+
+.lost-id-list h3.active {
+background-position: right -20px;
+}
+
+.lost-id-list li a {
+color:#FFF;
+text-decoration: none;
+display: block;
+padding:3px;
+}
+
+.lost-id-list li a:hover {
+background:#748fb4;
+text-decoration: none;
+}
+
+
+/* ---- Naked World / chart */
+
+/* Chart tabs */
+
+.chart {
+width:97%;
+height:620px;
+overflow: hidden;
+/* padding:20px; */
+/* Padding removed as it interferes with custom scrollbar */
+}
+
+.chart-wrapper {
+background: #5892be image-url('bg-chart-panel.png') left bottom repeat-x;
+padding:20px 0;
+width:85%;
+}
+
+.chart-wrapper h2 {
+font-size:16px;
+margin:0 0 20px 20px;
+}
+
+body.charts nav.sub ul li a {
+display: block;
+padding: 10px 15px 10px 10px;
+color: #868686;
+text-decoration: none;
+background: #b8b8b8;
+background: rgba(184,184,184,0.5);
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+}
+
+
+
+
+body.charts nav.sub ul li.ui-state-active a {
+display: block;
+padding: 10px 15px 15px 10px;
+color: white;
+text-decoration: none;
+background: #5b93be;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+}
+
+
+.chart ol,
+.chart li {list-style: none}
+
+
+.chart li {
+width:93%;
+background:#d1e0ec;
+padding:4px 10px;
+margin-bottom:4px;
+position: relative;
+}
+
+.chart li span.bar-count {
+background:image-url('chart-shaft-end.png') left center no-repeat;
+display: block;
+float:left;
+height:40px;
+width:65%;
+}
+
+
+.chart li span.bar-count span {
+background:image-url('chart-shaft-stretch.png') right center no-repeat;
+font-weight: bold;
+padding:0 30px 0 0;
+display: block;
+vertical-align: middle;
+text-align: right;
+height:40px;
+margin-left:5px;
+}
+
+.chart li span.bar-count span strong {
+color:#FFF;
+font-weight: bold;
+font-size:24px;
+display: block;
+position: relative;
+top:6px;
+}
+
+
+.chart li span.country-wrapper {
+float:right;
+width:92px;
+display: table;
+position: relative;
+top:5px;
+}
+
+.chart li span.country {
+background-repeat: no-repeat;
+background-position: left center;
+padding:0 0 0 40px;
+font-style: italic;
+height: 30px;
+display: table-cell;
+vertical-align: middle;
+}
+
+/* Uisng display:table / table-call to get country name verticlaly aligned */
+
+
+/* Flags */
+.br {background-image:image-url('flag-br.png')}
+span.uk {background-image:image-url('flag-uk.png')}
+.it {background-image:image-url('flag-it.png')}
+.cn {background-image:image-url('flag-cn.png')}
+.it {background-image:image-url('flag-it.png')}
+.es {background-image:image-url('flag-es.png')}
+.sa {background-image:image-url('flag-sa.png')}
+.jm {background-image:image-url('flag-jm.png')}
+
+
+/* ---- Splash */
+
+body.splash {
+margin-top:50px;
+}
+
+.splash .content .form-wrapper {
+width:348px;
+}
+/* wrapper to help handle the background image and keeping everything inside it */
+
+
+.splash .content form {
+background: #FFF;
+padding:30px 70px 0 30px;
+margin-bottom: 50px;
+background:image-url('bg-form-box.png') no-repeat;
+height:530px;
+}
+
+.splash .content form h1 {
+font-weight: bold;
+font-size: 18px;
+letter-spacing: -1px;
+}
+
+.splash .content form p {
+font-size:11px;
+}
+
+
+.splash .content form p.note {
+margin-top: 8px;
+}
+
+.splash .content form p.note a {
+font-size:11px;
+color:#436291;
+padding:2px 0 2px 20px;
+background: image-url('question-mark.gif') left 1px no-repeat;
+}
+
+.splash .content form label {
+color:#436291;
+font-size:14px;
+font-weight: bold;
+letter-spacing: -1px;
+margin:15px 0 5px 0;
+display: block;
+}
+
+.splash .content form select {
+width:100%;
+}
+
+
+.splash .content form .dob select {
+width:30%;
+margin-right:4px;
+}
+
+
+.splash .content form .checkbox:first-child {
+margin-top:20px;
+}
+
+.splash .content form .checkbox {
+margin-bottom: 5px;
+}
+
+.splash .content form .checkbox label {
+font-weight: normal;
+color:#666;
+width:auto;
+font-size: 12px;
+letter-spacing: normal;
+margin:0;
+}
+
+
+.splash .content form .checkbox input {
+float:left;
+width:auto;
+margin:0 15px 30px 0 
+}
+
+
+.splash .content form .checkbox label[for='under-age'] {
+margin-top:25px;
+}
+/* !!IE6 */
+
+.splash .content button.submit {
+background:#5da7d9 image-url('bg-blue-fade.gif') left bottom repeat-x;
+}
+
+.splash .content button.submit:hover {
+background: #E42E65;
+}
+
+/* Stars fine tuning */
+.splash .content .features {
+float:none;
+}
+
+.splash .content .features .feature-2 {
+top:68px;
+}
+
+.splash .content .features .feature-3 {
+font-size:13px;
+top:45px;
+left: 273px;
+}
+
+
+/* ---- Home / Intro */
+
+.home .intro .logo {
+margin-bottom:20px;
+}
+
+.home .intro {z-index: 50}
+
+.home .before-you-start {
+z-index: 100;
+margin-bottom: 200px;
+}
+
+.home .tools {
+z-index: 75;
+padding-top:40px;
+}
+
+
+
+.before-you-start {
+margin-bottom:50px;
+}
+
+.before-you-start div {
+background: #EEE;
+background: rgba(102,102,102,0.1);
+padding:10px;
+}
+
+.before-you-start div div {
+background: #FFF;
+padding:30px;
+}
+
+.before-you-start h1,
+.before-you-start h3{color:#4b75a3}
+
+.before-you-start h1 {
+font-size:30px;
+margin-bottom:10px;
+}
+
+.before-you-start h2 {
+font-size:22px;
+color:#333;
+margin-bottom:10px;
+}
+
+.before-you-start h3 {
+font-size:18px;
+margin-top:12px;
+}
+
+
+
+
+
+.home .intro p,
+.tools p {
+margin: 20px 0;
+}
+
+
+
+/* Stars */
+
+.home .intro .flash {
+background: image-url('star-green-left-arrow.png') no-repeat;
+height:107px;
+position: relative;
+left:65%;
+}
+
+.home .intro .flash p {
+position: absolute;
+left:96px;
+top:30px;
+width:88px;
+line-height: 85%;
+margin:0;
+text-align: center;
+color:#FFF;
+font-size:22px;
+font-weight: bold;
+-webkit-transform: rotate(10deg);
+-moz-transform: rotate(10deg);
+-ms-transform: rotate(10deg);
+-o-transform: rotate(10deg);
+}
+
+
+
+
+
+.home .tools .flash {
+background: image-url('star-pink-right-arrow.png') no-repeat;
+height:115px;
+width:201px;
+position: relative;
+right:22%;
+}
+
+.home .tools .flash p {
+position: absolute;
+left:18px;
+top:30px;
+width:88px;
+line-height: 85%;
+margin:0;
+text-align: center;
+color:#FFF;
+font-size:22px;
+font-weight: bold;
+-webkit-transform: rotate(-10deg);
+-moz-transform: rotate(-10deg);
+-ms-transform: rotate(-10deg);
+-o-transform: rotate(-10deg);
+}
+
+
+
+/* ---- Naked World */
+
+.naked-world .intro h1 {
+font-size:32px;
+color:#436291;
+letter-spacing: -1px;
+}
+
+.naked-world .intro {
+font-weight: bold;
+}
+
+
+.naked-world .gallery {
+clear:both;
+margin-top:30px;
+}
+
+.naked-world .gallery .entry {
+width:25%;
+margin-left:4%;
+}
+
+.naked-world form.filter p {
+color: white;
+font-size: 16px;
+font-weight: bold;
+margin-right:10px;
+}
+
+
+/* ---- Vote thanks */
+
+button.submit {
+padding:15px;
+background-color: #64c18a;
+background-image:image-url('bg-green-fade.gif');
+background-position:left bottom;
+background-repeat:repeat-x;
+font-size:24px;
+font-weight: bold;
+color:#FFF;
+font-family: "Arial", Verdana, sans-serif;
+border: 0;
+}
+button.submit:hover {
+background-color:#E42E65;
+background-image: none;
+}
+/* Move to generic forms area */
+
+form.enter-comp {
+background:image-url('arrow-small-down-left.png') 62% 0px no-repeat; 
+position: relative;
+}
+
+form.enter-comp .arrow {
+position: absolute;
+left:-50px;
+bottom:30px;
+}
+
+form.enter-comp button {
+margin-top:30px;
+}
+
+form.enter-comp label {
+display: block;
+margin-bottom:10px;
+font-size:12px;
+}
+
+form.enter-comp label[for='email'] {
+font-weight:bold;
+font-size:14px;
+color: #436291;
+}
+/* !!ie6 */
+
+form.enter-comp label[for='email'] span {
+color:#666;
+font-size:11px;
+font-weight: normal;
+}
+/* !!ie6 */
+
+form.enter-comp p {
+color:#E42E65;
+font-weight: bold;
+}
+
+form.enter-comp input[type='email'] {
+width:45%;
+padding:8px;
+background: #FFF image-url('bg-input-top-fade.gif') repeat-x;
+border-top:1px #999 solid;
+border-right:1px #999 solid;
+border-bottom:1px #CCC solid;
+border-left:1px #999 solid;
+outline: none;
+}
+/* !!ie6 */
+
+
+
+form.enter-comp div {
+margin-top:40px;
+}
+
+.vote-thanks h1.tear-fade {
+width:60%;
+position: relative;
+top:60px;
+}
+
+.confirmation h1.tear-fade {
+top:0;
+}
+
+.vote-thanks .voted ul li {
+font-weight:bold;
+font-size:16px;
+margin-bottom: 10px;
+}
+
+.vote-thanks .voted ul li.like {
+float: right;
+margin-right: 23%;	
+}
+
+.vote-thanks .voted ul li span {
+color:#E42E65;
+}
+
+.vote-thanks .voted div {
+margin-left:20%;
+margin-top: 15px;
+}
+
+
+.vote-thanks .grid_12 p.button {
+width:270px;
+margin:30px 0 60px 0;
+}
+
+/* Flags */
+.flag {
+padding:2px 0 2px 30px;
+background-repeat: no-repeat;
+background-position: left 2px;
+}
+
+.uk {
+background-image:image-url('flag-uk.gif')
+}
+
+/* Add new flags in same way as .uk above */
+
+
+/* ---- Gallery */
+
+.gallery li {float:left;margin-left:2%;margin-bottom:20px}
+.winners .gallery li {margin-bottom:5px}
+.gallery .entry {width:14%;position: relative}
+.gallery .entry .cover {position: relative;}
+.gallery .entry .cover p {
+position: absolute;
+top:30px;
+left:0px;
+text-align: center;
+color:#4d7aaa;
+font-size:26px;
+font-weight:bold;
+font-style: normal;
+padding:0 33% 0 5%;
+line-height: 85%;
+letter-spacing: -1px}
+
+
+.winners-gallery .intro p {
+font-size:16px;
+font-weight: bold;
+color:#666;
+line-height: 150%;
+margin-bottom:30px;
+
+}
+
+/* Feature / stars area */
+
+.features {
+width:379px;
+height:158px;
+background: image-url('stars.png');
+float:right;
+}
+
+.features ul {
+position: relative;
+}
+
+.features ul li {
+display: block;
+font-weight: bold;
+color:#FFF;
+position: absolute;
+text-align: center;
+}
+
+.features .feature-1 {
+width:90px;
+height:55px;
+left:12px;
+top:30px;
+font-size:20px;
+line-height: 100%;
+-webkit-transform: rotate(-10deg);
+-moz-transform: rotate(-10deg);
+-ms-transform: rotate(-10deg);
+-o-transform: rotate(-10deg);
+}
+
+.features .feature-2 {
+width:70px;
+height:55px;
+left:157px;
+top:71px;
+font-size:18px;
+line-height: 100%;
+-webkit-transform: rotate(10deg);
+-moz-transform: rotate(10deg);
+-ms-transform: rotate(10deg);
+-o-transform: rotate(10deg);
+}
+
+.features .feature-3 {
+width:90px;
+height:70px;
+left:275px;
+top:40px;
+font-size:19px;
+line-height: 100%;
+text-transform: uppercase;
+-webkit-transform: rotate(-10deg);
+-moz-transform: rotate(-10deg);
+-ms-transform: rotate(-10deg);
+-o-transform: rotate(-10deg);
+}
+
+.features .feature-3 span {
+display: block;
+font-size:32px;
+line-height: 90%;
+}
+
+
+/* Submission Details -  */
+
+ .submitted-design {
+position: relative;
+margin-left: 10%;
+margin-top: 65px;
+}
+
+ .submitted-design .star {
+position: absolute;
+left:200px;
+top:-45px;
+background: image-url('star-large-yellow-fade.png') center top no-repeat;
+width:151px;height:150px;
+-webkit-transform: rotate(10deg);
+-moz-transform: rotate(10deg);
+-ms-transform: rotate(10deg);
+-o-transform: rotate(10deg);
+
+}
+
+ .submitted-design .star p {
+margin: 0 auto;
+position: relative;
+top: 34px;
+left:0;
+font-weight: bold;
+font-size: 26px;
+color:#FFF;
+line-height: 90%;
+text-align: center;
+width:100px;
+letter-spacing: -1px;
+}
+
+
+
+.winners .ui-tabs .ui-tabs-panel {
+background:none;
+}
+
+/* Some star .features tweaks for the create-details page */
+
+.create .features {
+float:none;
+margin:30px 0;
+}
+
+.create .features .feature-1 {
+width:85px;
+}
+
+.create .features .feature-3 {
+top:50px;
+}
+
+.create .content form {
+margin-bottom: 50px;
+position: relative;
+}
+
+.create .content form div {
+margin-bottom:20px;
+}
+
+.create .content form label {
+color:#436291;
+font-size:14px;
+font-weight: bold;
+float:left;
+width:45%;
+}
+
+
+.create .content form input,
+.create .content form fieldset,
+.create .content form.where-you-live select#country {
+float:right;
+width:45%;
+}
+
+
+.create .content form.about-you select#country {
+position: relative;
+left:7%;
+}
+
+.create .content form label span {
+display: block;
+margin-top:5px;
+font-size:12px;
+font-weight: normal;
+color:#666;
+}
+
+.create form label span.req {
+display: inline;
+color:#E42E65;
+font-size:14px;
+}
+
+
+.create .content form .checkbox {
+margin-bottom: 40px;
+}
+
+.create .content form .checkbox label {
+font-weight: normal;
+color:#666;
+width:99%;
+}
+
+.create .content form .checkbox input {
+float:left;
+width:auto;
+margin:0 15px 0 0 
+}
+
+
+.create .content form .gender div {
+float: left;
+width: 100px;
+position: relative;
+left:7%;
+}
+
+.create .content form .gender div input {
+float: left;
+width: auto;
+margin-right:10px;
+}
+
+
+.create .content form button {
+margin-top:30px;
+}
+
+.create .content form .arrow {
+position: absolute;
+bottom:0;
+left:-50px;
+bottom:20px;
+}
+
+
+/* create-confirmation */
+
+.confirmation .content .last h1 {
+margin-top:60px;
+}
+
+.confirmation .content .last p {
+padding-right:25%;
+}
+
+.confirmation .submitted-design {
+margin-top: 25px;
+}
+
+
+/* Share "Share the love" */
+
+.content .share p {
+background:image-url('arrow-straight-right.png') center bottom no-repeat;
+padding-bottom:12px;
+padding-right:0 !important;
+font-weight:bold;
+font-size: 18px;
+color:#333;
+letter-spacing: -1px;
+width:120px;
+float:left;
+}
+
+.content .share ul li {
+float:left;
+}
+
+.content .share ul li a {
+display: block;
+text-indent: -9999px;
+width:32px;
+height:32px;
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+
+.content .share ul li a:hover {
+filter:alpha(opacity=80);
+opacity: 0.8;
+}
+
+.content .share ul li a.facebook {
+background-image:image-url('icon-32-facebook.png');
+margin-right:5px;
+}
+
+.content .share ul li a.twitter {
+background-image:image-url('icon-32-twitter.png');
+}
+
+.content .grid_12 p.button {
+width: 270px;
+margin: 30px 0 60px 0;
+}
+
+
+.confirmation .content .share ul {
+float: left;
+margin-left:10px;
+}
+
+.charts .share {
+margin:30px 0 120px 20%;
+}
+
+
+
+/* --- */
+
+
+.gallery .entry p {
+font-style: italic;
+font-weight: bold;
+margin-bottom:6px;
+font-size:12px;
+color:#333;
+}
+.gallery .entry p span {color:#e42e65}
+
+.gallery .entry {position: relative}
+
+.gallery .entry .star {
+width:65px;
+height:70px;
+background:image-url('votes-flash.png') no-repeat;
+font-size:16px;
+font-weight:bold;
+position: absolute;
+right:-10px;
+top:-27px;
+color:#FFF;
+line-height:100%;
+padding:18px 0 0 3px;
+text-align: center;
+-webkit-transform: rotate(10deg);
+-moz-transform: rotate(10deg);
+-ms-transform: rotate(10deg);
+-o-transform: rotate(10deg);
+}
+
+.star > span {
+-webkit-transform: rotate(25deg);
+-moz-transform: rotate(25deg);
+-ms-transform: rotate(25deg);
+-o-transform: rotate(25deg);
+}
+.star span span {display: block;font-size:24px;}
+
+.star span.fig-4 {font-size:18px;}
+.star span.fig-5 {font-size:15px;}
+.star span.fig-6 {font-size:12px;}
+
+.gallery li p.tip {font-size:19px;font-weight: bold;width:110px;position: absolute;
+bottom:-120px;
+left:-60px;
+padding-left:26px;
+padding-bottom:50px;background: image-url('dotty-arrow-left-down.png') no-repeat left bottom;text-align:center;line-height: 100%;
+-webkit-transform: rotate(-5deg);
+-moz-transform: rotate(-5deg);
+-ms-transform: rotate(-5deg);
+-o-transform: rotate(-5deg);}
+
+
+/* Countdown panel */
+
+.countdown {
+width:182px;
+position: absolute;
+bottom:-55px;
+left:-30px;
+background: image-url('countdown-arrow.png') center top no-repeat;
+padding-top: 28px;
+z-index: 99;
+}
+
+.countdown div {
+background: #92b6d1 image-url('countdown-bg.gif') left bottom repeat-x;
+padding:10px;
+}
+
+.countdown span {
+display: block;
+font-size:14px;
+letter-spacing: -1px;
+margin-bottom:6px;
+padding-left:3px;
+font-weight: bold;
+}
+.countdown span strong {
+padding:1px 3px;
+line-height: 90%;
+font-size:32px;
+background: #FFF;
+color:#d01f55;
+position: relative;
+top:5px;
+display: inline-block;
+}
+
+.gallery .entry .countdown p {
+color:#FFF;
+font-style: normal;
+position: relative;
+top:9px;
+font-size:12px;
+}
+
+/* -- */
+
+
+.weekly-winners {margin-top:60px}
+.weekly-winners-title .grid_7 {position: relative;}
+
+li.vote, li.like {float:left}
+li.vote {margin-right:4%}
+
+.entry .wrapper {position: relative;width:auto}
+
+/* Gallery filter form + title */
+
+.gallery-more {
+padding-bottom:30px;
+}
+
+
+.gallery-more .row {
+
+}
+
+
+.gallery-more .row h3,
+.gallery-more .row p {
+color:#FFF;
+font-size:16px;
+font-weight: bold;
+} 
+
+.gallery-more .row p {
+margin-left:8px;
+}
+
+.gallery-more .row select {
+margin:0 10px;
+font-size:14px;
+}
+
+
+form.filter {
+background: image-url('gallery-more-title-bg.png') repeat-x;
+padding:18px 5px 31px 20px;
+width:85%;
+}
+
+form.filter h3 {
+	float:left;
+	-webkit-transform: rotate(-1deg);
+	-moz-transform: rotate(-1deg);
+	-ms-transform: rotate(-1deg);
+	-o-transform: rotate(-1deg);
+	
+}
+
+form.filter div{
+float:right;
+}
+
+
+form.filter p,
+form.filter select {
+float:left;
+}
+
+
+
+
+/* --   */
+
+/* ---- Filter lists */
+
+
+ul.filter-options {display: none}
+
+.footer-tear {
+background:image-url('bg-paper-tear-bottom.png') left top repeat-x;
+height:60px;
+position: relative;
+bottom:60px;
+}
+
+footer.main {padding-top:10px;padding-bottom:50px;background:#FFF}
+footer.main nav {text-align: center}
+footer.main nav ul {width:auto;margin:0 auto}
+footer.main nav li {
+float:none;
+display: inline;
+padding-right:16px;
+margin-right:12px;
+background:image-url('seperator-small.png') right center no-repeat;
+}
+
+
+footer.main li a {color:#5b99c6;font-weight: bold}
+footer.main li a:hover {color:#37729e}
+
+/* -- Misc */
+
+.content input[type='text'],
+form.about-you input[type='text'],
+form.about-you input[type='email'] {
+padding:8px;
+background: #FFF image-url('bg-input-top-fade.gif') repeat-x;
+border-top:1px #999 solid;
+border-right:1px #999 solid;
+border-bottom:1px #CCC solid;
+border-left:1px #999 solid;
+outline: none;
+}
+
+
+/* -- Form error messages */
+
+label.error {
+color:#E42E65 !important;
+font-size: 12px !important;
+font-weight: bold;
+} /* generic rule - override form specific / existing label styles */
+
+/* different layout for the error labels in checkbox divs */
+.content form .checkbox label.error {
+float:left;
+clear: both;
+display: block;
+margin-top:10px;
+}
+
+/* Create confirmation form */
+.create .content form label.error {
+float:right;
+width:auto;	
+display: block;
+margin: 5px 0;
+font-weight: bold;
+}
+
+/* Vote thanks form */
+form.enter-comp label.error {
+width:100%;
+margin-top:5px;
+display: block;
+}
+
+
+
+#resend-id label.error {
+margin:5px 0;
+}
+
+/* !!ie6 */
+
+/* Panels which fade in */
+.fade {display: none}
+
+.winners li.like {float:right;margin-right: 20%}
+
+li.vote {background: #60abda image-url('vote-bg.png') left bottom repeat-x;}
+li.vote a {padding:5px 25px 5px 5px;display: block;background:image-url('white-tick-small.png') no-repeat 90% center;text-decoration: none;color:#FFF}
+li.vote a:hover {color:#b3d7ed}
+
+li.like a {display: block;width:52px;height:25px;background:image-url('like-button.png') no-repeat;text-indent: -9999px;}
+
+p.link a {padding:2px 25px 2px 0;background:image-url('left-arrow.png') no-repeat right center;}
+
+.left {float:left;}
+.right {float:right;}
+
+.req {color:#E42E65}
+
+/* Mobile hides */
+nav select,
+form.filter input[type="submit"] {
+display: none;
+}
+
+
+/* Light box - from http://buckwilson.me/lightboxme/ */
+
+
+#lost-form {
+display: none;
+width:384px;
+max-width: 384px;
+background: image-url('overlay-form-bg1.png') no-repeat;
+height:422px;
+}
+
+
+#lost-form h3 {
+font-size:24px;
+font-weight: bold;
+color: #436291;
+letter-spacing: -1px;
+margin-bottom: 20px;
+}
+
+#lost-form h4 {
+font-size:14px;
+font-weight: bold;
+color:#666;
+margin-bottom: 20px;
+}
+
+#resend-id {
+padding:60px 30px 30px 30px;
+width:82%;
+background: image-url('dotty-arrow-right-down.png?v=35') 95% 225px no-repeat;
+}
+
+#resend-id input {
+outline: none;
+padding: 8px;
+background: white image-url('bg-input-top-fade.gif') repeat-x;
+border-top: 1px #999 solid;
+border-right: 1px #999 solid;
+border-bottom: 1px #CCC solid;
+border-left: 1px #999 solid;
+}
+
+#resend-id label {
+margin:30px 0 5px 0;
+color: #436291;
+font-weight: bold;
+font-size:14px;
+display: block;
+}
+
+#resend-id button {
+margin-top:30px;
+font-size: 18px;
+}
+
+.close {
+float: right;
+display: block;
+color: #436291;
+font-weight: bold;
+padding:2px 20px 2px 0;
+background: image-url('close.png') right center no-repeat;
+position: relative;
+bottom:20px;
+}
+
+.close:hover {
+color:#E42E65;
+}
+
+/* ************* IE FIXES ***************** */
+
+.ie .content button {
+width:150px;
+}
+
+
+.ie .home .before-you-start {
+margin-bottom:50px;
+}
+
+
+.ie .home .content .fade {
+padding-bottom: 50px;
+}
+
+.ie .create .about-you button.submit {
+width:290px;
+}
+
+/* ie didn't like width:auto - the arrow got knocked down to new line */
+
+
+/* -- IE8
+==================== */
+
+.ie8 header.row{
+position: relative;
+bottom:-20px;
+}
+/* nav / whole top area not reposnding to relative positioning applied around line 173 - so have dragged it down here */
+
+
+
+
+/* -- IE7
+==================== */
+
+.ie7 .search input[type="search"]{
+border:1px #F00 solid;
+}
+
+.ie7 .search #search-for-box {
+width:70%;
+}
+
+
+
+/*
+Countdown panel z-index not responding
+tried: http://brenelz.com/blog/squish-the-internet-explorer-z-index-bug/
+no effect
+
+Have to move countdown panel up a bit in IE7 to avoid this overlap: http://pbrg.es/1D2M050k3S2J0N2H2M11
+*/
+
+.ie7 .countdown {
+bottom:-40px;
+}
+
+
+
+
+.ie7 .gallery .entry .cover p {
+left:15px;
+}
+ 
+/* Footer trans png was creeping up: http://pbrg.es/0w3K1d0q1B0P2w1s081f */
+.ie7 .content .grid_12 ul.gallery {margin-bottom: 50px;}
+
+.ie7 .submitted-design .star p {
+line-height: 100%;
+/* less than 100% cuts words off: http://pbrg.es/DH8C */
+}
+
+.ie7 input[type='checkbox'],
+.ie7 input[type='radio']{
+border:0;
+background:none;
+}
+
+/* Chart page for both IE6 and IE7 as they don't have custom scrollbars */
+
+.ie7 .chart,
+.ie6 .chart {
+height:620px;
+position: relative;
+}
+
+.ie7 .chart li,
+.ie6 .chart li {
+width:80%;
+margin-left:20px;
+}
+
+.ie7 .chart,
+.ie6 .chart {
+overflow:auto;
+}
+
+.ie7 .chart li span.country-wrapper,
+.ie6 .chart li span.country-wrapper {
+display: block;
+}
+
+.ie7 .chart li span.country,
+.ie6 .chart li span.country {
+display: block;
+height: 30px;
+}
+
+/* -- IE6
+==================== */
+
+.ie6 nav.main {
+position: relative;
+top: 19px;
+} /* The nav was being pushed down a bit too far - so that the tear would overlap and make the links hard to click */
+
+.ie6 .search #search-for-box {width:70%;}
+/* IE 6 doesn't support input type selectors */
+
+.ie6 .search .submit {
+background:#a6b7cf;
+border:0;
+}
+
+
+/* Features stars not responding to any floating: http://pbrg.es/3I1L0b3S3x233r1t2K0N */
+.ie6 .winners-gallery .features {position: absolute;right:20px;top:20px}
+/* This rule to too broad - is affecting other pages */
+
+.ie6 .entry {width:141px;margin-right:2px;height:265px}
+
+.ie6 .entry .like  {width:160px}
+
+.ie6 .entry .star {z-index: 99999;background: image-url('votes-flash.gif') no-repeat;}
+/* IE6 was choking on the trans png backgrpound and rendering like so: http://pbrg.es/2v202S3V3X121o1l0q2Y 
+So IE6 get a transparent gif with no matte, the dip in quality is hardly noticeable */
+
+
+/* Vote/like ul needed an explicit width: http://pbrg.es/3l3P2z2T2q102c000W43 */
+.ie6 li.vote {margin-right:2px;width:60px;}
+.ie6 li.vote a {background-position: 80%;}
+
+.ie6 li.like {width:55px !important;}
+.ie6 li.like a {width:55px;}
+
+.ie6 .gallery .entry .cover p {
+left:18px;
+}
+
+
+.ie6 .gallery li p.tip {
+bottom:-70px;
+}
+
+.ie6 .content .grid_12 ul.gallery {margin-bottom: 50px;}
+
+.ie6 div.content, .ie6 footer.main {
+position: relative;bottom:10px;
+}
+
+/* -- vote-thanks */
+
+.ie6 .voted ul {
+width:320px;
+}
+
+.ie6 .vote-thanks .voted ul li.like {
+margin-right:0;
+}
+
+
+.ie6 .submitted-design .star {
+z-index:500;
+}
+
+.ie6 .submitted-design .star p {
+line-height: 100%;
+/* less than 100% cuts words off: http://pbrg.es/DH8C */
+}
+
+.ie6 .use-or-upload .arrow {
+top:-32px;
+}
+/* small arrow shift */
+
+
+/* About */
+
+.ie6 .about .grid_6 {
+position: relative;
+}
+
+.ie6 .about .screenshot {
+position: absolute;
+left:0;
+top:0;}
+/* ie6 can't resize the images fluidly - any image larger than eh width of the col causes new line breaking - so removing the image from the flow keeps it all intact */
+
+
+.ie6 .about .use-or-upload .grid_2 {
+width: 50px !important;
+} /* ie6 couldn't handle these 3 cols next to each other without breaking to new line */
+
+
+.ie6 .about .grand-prize .grid_6 h4,
+.ie6 .about .grand-prize .grid_6 p {
+width:300px;
+}
+/* 30% right padding exists above to narrow the content at the bottom to match the layout artwork, but IE6 took it too far: http://pbrg.es/DHSI */
+
+
+/* Splash page */
+.ie6 .splash .features {position: static}
+
+
+/* Chart page - Naked World */
+
+.ie6 .content .share {
+margin:30px 0 30px 50px;
+}
+
+
+.ie6 .charts .earth img {
+display: none;
+}
+/*
+Having issues with ie6 and this last column containing this image: http://pbrg.es/DHAc
+So simply not showing image for now in ie6 for now
+*/
+
+
+
+
+
+/* ie6 is ignoring the 'nav select' rule to hide the mobil enav - so had to add a class to it /* 
+
+    /*
+	========================================================
+	========================================================
+	========================================================
+	*/
+
+
+	/* Apply fonts */
+	
+	/*
+Looks quite bad
+	http://pbrg.es/DGYD
+	
+*/
+	/*
+.fontface h1,
+	.fontface h2,
+	.fontface h3,
+	.fontface h4,
+	.fontface .features li,
+	.fontface .star {
+	font-family: 'HELVHANDFULL2Medium', Arial, Helvetica, sans-serif;
+	font-weight: normal !important;
+	letter-spacing: 1px !important;
+	}
+	
+*/
+
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+}
+
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+
+
+
+
+
+@media handheld, only screen and (max-width: 767px) {
+
+}
+
+    /*
+	========================================================
+	========================================================
+	========================================================
+	
+	FACEBOOK STYLES
+	
+	========================================================
+	========================================================
+	========================================================
+	*/
+
+
+
+/* Facebook style */
+/* Will replace with bog tag 'facebook' as don't want this kicking in on other devices - will it nmatter? */
+@media only screen and (max-width: 520px) {
+/* ======================================================== */
+
+
+/* Show main nav */
+nav.main ul {display: block}
+nav.main select {display: none}
+
+/* Shrink nav width and position */
+#nav1 {width:64px}
+#nav2 {width:95px}
+#nav3 {width:83px}
+#nav4 {width:110px;}
+#nav5 {width:80px}
+
+nav.main ul li {
+font-size:14px;
+margin-right: 5px;
+}
+
+nav.main {
+top:25px;
+}
+
+/* Show tabs */
+nav.weekly {
+display: block;
+}
+
+/* Tidy tabs */
+nav.sub ul li { 
+margin-right:5px;
+font-size:14px;
+}
+
+nav.sub ul li a {
+padding:10px 10px 15px 10px;
+}
+
+.winners div.tear {
+display: block;
+left: -112px;
+width: 150%;
+}
+
+.winners .ui-tabs {
+padding-top:8px;
+overflow: hidden;
+}
+
+/* Search and lost ID */
+
+.logo {
+margin-top:100px;
+}
+
+.search,
+.lost-id {
+display: block;
+z-index: 998;
+position: absolute;
+}
+
+.search {
+top:150px;
+}
+
+.lost-id {
+top:200px;
+}
+
+.search {
+width:50%;
+padding: 10px;
+}
+
+.search input[type="search"] {
+width: 47%;
+outline: none;
+}
+/* !IE6 */
+
+.search label {
+font-size: 12px;
+display: inline;
+}
+
+.lost-id-list {
+display: none;
+}
+
+/* Gallery */
+.gallery .entry {
+width:33%;
+}
+.gallery li {
+margin-left:0;
+margin-bottom:35px;
+}
+
+#tabs {padding-bottom:50px;}
+/* Used overflow hidden on this to get good tear efffect - so have to make room to allow countdown to show */
+
+.winners-gallery .features {
+display: block;
+float: none;
+position: relative;
+bottom: 10px;
+}
+
+.countdown {
+height: 100px;
+bottom: -83px;
+left: -41px;
+width:164px; /* reducing width so it doesn't get cut off */
+}
+
+.winners h4 {width:99%}
+
+.gallery-more .row h3 {
+display: none;
+}
+
+form.filter div span {
+width:45%;
+float:left;
+}
+
+.gallery-more .row h3, .gallery-more .row p {
+font-size:12px
+}
+
+form.filter p, form.filter select {
+float:left;
+}
+
+.gallery-more .row select {
+margin: 0 5px;
+}
+
+form.filter input,
+form.filter input[type=submit] {display: none}
+form.filter input.image-submit {display: block}
+
+form.filter {
+padding: 5px 5px 10px 5px;
+}
+
+.gallery .entry .cover p {
+width:94px;
+left:-10px;
+}
+
+.gallery li p.tip {
+position: absolute;
+bottom:-122px;
+left: 0px;
+display: block;
+}
+
+/* -- About */
+
+
+.covering img {
+left:350px;
+}
+
+p.big {
+text-align: center;
+}
+
+.use-or-upload div {
+text-align: center;
+}
+
+.about .finalists-summary .green abbr {
+top:-24px;
+left:99%;
+font-size:42px;
+}
+
+.about .finalists-summary .arrow {
+right: 55px;
+top: -45px;
+}
+
+
+
+
+.about .grand-prize .blue .star {
+left:0;
+float:left;
+
+}
+
+.grand-prize .blue .arrow {
+display: none;
+}
+/* Hiding arrow so the blue star can float well alongside title */
+
+.about .grand-prize .grid_6 h4 {
+padding-right:25%;
+font-size:20px;
+/* shift away from the star slightly */
+position: relative;
+left:15px;
+}
+
+.about .grand-prize .grid_6 p {
+padding-right:0;
+}
+
+
+/* Intro */
+
+.home .content {
+padding-bottom: 550px;
+}
+
+/* To get the intro below the two side panels - we must take it out of the flow, sp to give it space - the content has padding to house it */
+
+/* Watch for this height changing in translations */
+
+
+
+.home .intro,
+.home .tools {
+float:left;
+width:42%;
+}
+
+
+.home .tools {
+padding-top: 145px;
+}
+
+p.button a {
+font-size: 13px;
+}
+
+.home .intro .flash {
+left:0;
+}
+
+.home .before-you-start {
+margin-bottom:0px;
+position: absolute;
+bottom:100px;left:0;
+}
+
+.home .tools .fade p {
+text-align: left;
+}
+
+.home .tools .fade,
+.home .tools .fade p.button,
+.home .tools .fade .flash p {
+text-align: center;
+}
+
+.home .tools .fade p.button {
+width:96%;
+}
+
+
+
+.home .tools .flash {
+right:0;
+padding-bottom: 50px;
+}
+
+
+/* Create details */
+
+body.confirmation .content {
+padding-bottom:75px;
+}
+
+
+.create .content form input, .create .content form fieldset, .create .content form.where-you-live select#country {
+margin-right: 20px;
+}
+/* Move away from right edge */
+
+
+/* -- Naked world */
+.earth img {
+display: none;
+}
+/* Can't fit into flow - removing for now */
+
+.chart-wrapper {
+width:100%;
+}
+
+.charts .share {
+margin: 30px 0 30px 20%;
+}
+
+.naked-world .gallery .entry {
+width:33%;
+margin-left: 0;
+}
+
+
+.naked-world form.filter p {
+margin-right: 25px;
+margin-bottom:0;
+margin-left:20px;
+}
+
+.naked-world .gallery .entry .cover p {
+left: -6px;
+}
+/* Footer */
+
+footer.main nav li {
+background: image-url('seperator-small.png') right center no-repeat;
+padding-right:10px;
+margin-right:5px;
+font-size:11px;
+}
+
+
+/* ======================================================== */
+}
+
+
+
+    /*
+	========================================================
+	========================================================
+	========================================================
+
+		END FACEBOOK
+
+	========================================================
+	========================================================
+	========================================================
+	*/
+
+
+
+
+
+    /*
+	========================================================
+
+		PHONE LANDSCAPE
+
+	========================================================
+	*/
+
+
+
+
+
+@media screen and (max-device-width: 480px) {
+
+nav.main {
+top:0;
+margin-top: 25px;
+}
+
+p.link {
+float:none;
+display: none;
+}
+
+nav.main ul,
+.lost-id,
+.features,
+.winners-gallery .features,
+.gallery-more div.tear,
+p.tip,
+form.filter input[type="image"] {display: none}
+
+
+nav.main select {
+display: block;
+}
+/* show mobile nav */
+
+.logo {
+margin-top:0px;
+}
+
+
+form.filter {
+background:#569ed3;
+padding:5px 5px 1px 10px;
+
+}
+
+
+/* Tabs */
+
+nav.sub ul li {
+margin-right: 3px;
+font-size: 12px;
+}
+
+nav.sub ul li a {
+padding: 10px 10px 15px 10px;
+}
+
+.gallery-more .row h3 {margin-bottom:15px;font-size:20px}
+form.filter h3,
+form.filter div,
+form.filter p, form.filter select {
+float:none;
+}
+
+form.filter p {display: inline}
+
+form.filter div span,
+form.filter input[type="submit"] {
+display: block;
+margin-bottom:15px;
+}
+
+.search {width:75%;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+
+display: none;
+
+}
+
+
+.weekly-winners-title .grid_7 p {
+font-size:12px;
+font-weight: bold;
+width:auto;
+position:static;
+top:0;
+left:0;
+padding-left:0;
+padding-bottom:0;
+background:none;
+text-align:center;
+}
+
+.star {
+left:70px;
+top:-27px;
+}
+.gallery .entry {
+width:47%;
+margin-right:2%;
+height:200px;
+}
+.gallery .entry img {
+width:80%;
+}
+
+.gallery .entry .cover p {
+font-size:18px;
+width:50px;
+left:10px;
+}
+
+
+.gallery li p.tip{
+left:-40px;
+bottom:-60px;
+}
+
+.winners li.like {
+float: none;
+margin-left: 7%;
+}
+
+footer.main nav li {
+float: none;
+background: none;
+}
+
+.countdown {
+bottom:-50px;
+}
+
+
+
+/* -- Intro */
+
+.home .tools {
+padding-top: 36px;
+}
+
+.home p.button a img {
+display: none;
+}
+/* Rather than reduce the font size to what would be too small - remove the arrow to make enough room */
+
+
+
+/* -- Vote thanks */
+.vote-thanks h1.tear-fade {
+width: auto;
+position: relative;
+top: 0px;
+}
+
+
+
+
+
+    /*
+	========================================================
+
+		PHONE PORTRAIT
+
+	========================================================
+	*/
+
+
+
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+/* ------------------------ */	
+
+
+/* -- Gallery */
+
+.countdown {
+bottom: -83px;
+}
+
+
+/* Rearrange tab nav */
+
+.winners div.tear {
+display: none;
+}
+
+nav.sub ul li {
+float:none;
+width:100%;
+font-size:14px;
+}
+
+nav.sub ul {
+margin-bottom:15px;
+}
+
+form.filter div span {
+width: 70%;
+float: none;
+display: block;
+margin-bottom: 8px;
+}
+
+nav.sub ul li a {
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+}
+
+.gallery li p.tip{
+left:-40px;
+bottom:-120px;
+}
+
+
+/* Intro */
+
+.home .intro, .home .tools {
+float: none;
+width: 90%;
+}
+
+
+p.button a {
+font-size:16px;
+}
+
+.home p.button a img {
+display: inline;
+}
+
+
+.home .content {
+padding-bottom: 650px;
+}
+
+/* Dodgy / temporary solution - it goes longer and thinner in portrait mode */
+
+
+/* Vote thanks */
+.vote-thanks h1.tear-fade {
+width: auto;
+position: relative;
+top: 0px;
+}
+
+.vote-thanks .voted div {
+margin-left: 0;
+margin-top: 15px;
+}
+
+form.enter-comp {
+background: image-url('arrow-small-down-left.png') 75% -20px no-repeat;
+position: relative;
+}
+
+/* ------------------------ */	
+}
+
+
+/* Create details */
+
+.submitted-design {
+margin-left: 0;
+margin-top: 15px;
+}
+
+
+/* Create details */
+
+.create .content form label {
+width: 40%;
+}
+
+.create .content form fieldset select {
+display: block;
+margin-bottom:10px;
+}
+
+
+.submitted-design .star {
+left: 160px;
+top: -45px;
+}
+
+
+.create .content form .gender div {
+float: left;
+width: 70px;
+position: relative;
+left: 7%;
+}
+
+.create .content form h2.tear-fade {
+font-size:20px;
+}
+
+
+/* ------------------------ */	
+		
+}
+
+
+
+
+/* Orientations */
+@media all and (orientation: portrait) {
+	
+/*
+	
+	.gallery .entry {width:45%;}
+	.star {right: -40px;}
+*/
+	
+}
+
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+	
+	
+	
+}
+
+
+
+/* -- Notes */
+
+/* 
+
+Country codes: http://pbrg.es/DDhJ
+
+*/

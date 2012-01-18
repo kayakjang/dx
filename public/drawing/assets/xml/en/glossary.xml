@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<glossary>
+		<share>
+			<label>
+				<![CDATA[Share the love]]>
+			</label>
+			<twitter-link>
+				<![CDATA[http://twitter.com]]>
+			</twitter-link>
+			<facebook-link>
+				<![CDATA[http://facebook.com]]>
+			</facebook-link>
+		</share>
+		<preview>
+			<your-design>
+				<![CDATA[your<br />design]]>
+			</your-design>
+			<continue-editing>
+				<![CDATA[Continue Editing]]>
+			</continue-editing>
+			<proceed-submit>
+				<![CDATA[Proceed and Submit]]>
+			</proceed-submit>
+			<close>
+				<![CDATA[Close]]>
+			</close>
+		</preview>
+		<tools>
+			<grab-your-tool>
+				<![CDATA[grab<br />your<br />tool]]>
+			</grab-your-tool>
+		</tools>
+		<drawing-board>
+			<undo>Undo</undo>
+			<clear>Clear</clear>
+			<upload-image>Upload an Image</upload-image>
+			<save>Save</save>
+			<submit>Submit</submit>
+		</drawing-board>
+		<options>
+			<adjust-tool>
+				<![CDATA[adjust<br />your<br />tool]]>
+			</adjust-tool>
+		</options>
+	</glossary>
+</document>
